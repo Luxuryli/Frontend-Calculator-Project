@@ -2,10 +2,6 @@ function appendToOutput(value) {
     document.getElementById("output").value += value;
 }
 
-function clearOutput() {
-    document.getElementById("output").value = "";
-}
-
 function calculate() {
     var expression = document.getElementById("output").value;
     var result;

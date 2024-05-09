@@ -1,4 +1,4 @@
-function appendToOutput(value) {
+function getOutput(value) {
     document.getElementById("output").value += value;
 }
 

@@ -38,13 +38,11 @@ h4 {
     align-items: center;
     font-size: 50px;
     font-family: 'Digital', sans-serif;
+    text-align: right;
 }
 
-#output:active {
-    border-width: none;
-    border-color: white;
-    border-style: none;
-    border: none;
+input:focus {
+    outline: none;
 }
 
 

@@ -5,51 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Calculator Project</title>
+    <link href="https://fonts.cdnfonts.com/css/digital" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="main.js" type="text/Javascript" />
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <table>
-        <tbody class="tbody-out">
-            <td class="output">
-                <p>0</p>
-            </td>
-        </tbody>
+
+
         <tbody class="tbody-in">
+            <td><input type="text" id="output" readonly></td>
             <tr>
-                <td><button input type="text">7</button></td>
-                <td><button input type="text">8</button></td>
-                <td><button input type="text">9</button></td>
-                <td><button input type="text">&#247;</button></td>
+                <td><button type="button" onclick="appendToOutput('7')">7</button></td>
+                <td><button type="button" onclick="appendToOutput('8')">8</button></td>
+                <td><button type="button" onclick="appendToOutput('9')">9</button></td>
+                <td><button type="button" onclick="appendToOutput('&#247')">&#247;</button></td>
             </tr>
 
             <tr>
-                <td><button input type="text">4</button></td>
-                <td><button input type="text">5</button></td>
-                <td><button input type="text">6</button></td>
-                <td><button input type="text">&#215;</button></td>
+                <td><button type="button" onclick="appendToOutput('4')">4</button></td>
+                <td><button type="button" onclick="appendToOutput('5')">5</button></td>
+                <td><button type="button" onclick="appendToOutput('6')">6</button></td>
+                <td><button type="button" onclick="appendToOutput('*')">&#215;</button></td>
             </tr>
 
             <tr>
-                <td><button input type="text">1</button></td>
-                <td><button input type="text">2</button></td>
-                <td><button input type="text">3</button></td>
-                <td><button input type="text">-</button></td>
+                <td><button type="button" onclick="appendToOutput('1')">1</button></td>
+                <td><button type="button" onclick="appendToOutput('2')">2</button></td>
+                <td><button type="button" onclick="appendToOutput('3')">3</button></td>
+                <td><button type="button" onclick="appendToOutput('-')">-</button></td>
             </tr>
 
             <tr>
-                <td><button input type="text">0</button></td>
-                <td><button input type="text">.</button></td>
-                <td><button input type="text">+</button></td>
-                <td><button class="equal" input type="text">=</button></td>
+                <td><button type="button" onclick="appendToOutput('0')">0</button></td>
+                <td><button type="button" onclick="appendToOutput('.')">.</button></td>
+                <td><button type="button" onclick="appendToOutput('+')">+</button></td>
+                <td><button class="equal" type="button" onclick="calculate()">=</button></td>
             </tr>
         </tbody>
     </table>
 
     <h4>Click <a href="https://luxuryli.github.io/Frontend-Calculator-Project/" target="_blank">here</a> to get to the
         repository</h4>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

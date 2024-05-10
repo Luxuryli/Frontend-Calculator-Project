@@ -76,7 +76,7 @@ button {
     font-weight: 700;
 }
 
-.equal {
+#equal {
     box-shadow: 2.5px 6px 0px #D28B42, 2.5px 0px 0px #D28B42, 0px 6px 0px #D28B42;
     background-color: #ea9f42;
 }

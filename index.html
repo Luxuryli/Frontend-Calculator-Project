@@ -17,12 +17,12 @@
 
 
         <tbody class="tbody-in">
-            <td><input type="text" id="output" placeholder="0"></td>
+            <td><input type="text" id="output" placeholder="0" readonly></td>
             <tr>
                 <td><button type="button" onclick="getOutput('7')">7</button></td>
                 <td><button type="button" onclick="getOutput('8')">8</button></td>
                 <td><button type="button" onclick="getOutput('9')">9</button></td>
-                <td><button type="button" onclick="getOutput('&#247')">&#247;</button></td>
+                <td><button type="button" onclick="getOutput('/')">&#247;</button></td>
             </tr>
 
             <tr>
@@ -43,12 +43,12 @@
                 <td><button type="button" onclick="getOutput('0')">0</button></td>
                 <td><button type="button" onclick="getOutput('.')">.</button></td>
                 <td><button type="button" onclick="getOutput('+')">+</button></td>
-                <td><button class="equal" type="button" onclick="calculate()">=</button></td>
+                <td><button id="equal" type="button" onclick="calculate()">=</button></td>
             </tr>
         </tbody>
     </table>
 
-    <h4>Click <a href="https://luxuryli.github.io/Frontend-Calculator-Project/" target="_blank">here</a> to get to the
+    <h4>Click <a href="https://github.com/Luxuryli/Frontend-Calculator-Project" target="_blank">here</a> to get to the
         repository</h4>
     <script src="main.js"></script>
 </body>

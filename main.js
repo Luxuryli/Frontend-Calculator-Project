@@ -19,7 +19,8 @@ function calculate() {
 }
 
     const output = document.getElementById('output');
-    
+    const equal = document.getElementById ('equal');
+
     document.addEventListener('keydown' ,  (event)  => {
         console.log(event)
         if(event.key == "0") {output.value += event.key;}
@@ -38,6 +39,14 @@ function calculate() {
         if(event.key == "-") {output.value += event.key;}      
         if(event.key == "/") {output.value += event.key;}        
         if(event.key == "*") {output.value += event.key;}
-        if(event.key == "=") {output.value = calculate(output.value);}
+        if(event.key == "=") {output.value = calculate();}
 
     })
+
+    function calculate() {
+    try {
+        return eval(output.value);
+    } catch (error) {
+        return "Error";
+    }
+}
